@@ -17,7 +17,7 @@ const Sidebar = () => {
         <div className="sidebar-top">
           <div className="img">
             <a
-              href="http://localhost:3000/"
+              href={process.env.REACT_APP_FRONTEND}
               target="_blank"
               title="Go Home Page"
               rel="noreferrer"

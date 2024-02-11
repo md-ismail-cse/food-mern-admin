@@ -57,7 +57,7 @@ const TopNav = () => {
   const logout = () => {
     localStorage.removeItem("aID");
     localStorage.removeItem("aToken");
-    window.location.href = "http://localhost:3000/";
+    window.location.href = process.env.REACT_APP_FRONTEND;
   };
 
   var message_count = 0;
