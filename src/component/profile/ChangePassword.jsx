@@ -22,6 +22,7 @@ const ChangePassword = () => {
           },
         }
       );
+
       setThumb(data.thumb);
       setEmail(data.email);
     };
@@ -45,7 +46,7 @@ const ChangePassword = () => {
           {
             headers: {
               "Content-Type": "multipart/form-data",
-              Authorization: localStorage.getItem("Atoken"),
+              Authorization: localStorage.getItem("aToken"),
             },
           }
         )
